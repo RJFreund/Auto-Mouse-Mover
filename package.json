@@ -1,0 +1,14 @@
+{
+  "name": "auto_mouse_move",
+  "version": "1.0.0",
+  "description": "moves your cursor if you haven't moved it for a period of time",
+  "main": "auto_mouse_move.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R.J. Freund",
+  "license": "ISC",
+  "dependencies": {
+    "robotjs": "^0.4.7"
+  }
+}
