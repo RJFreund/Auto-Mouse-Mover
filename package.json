@@ -4,7 +4,8 @@
   "description": "moves your cursor if you haven't moved it for a period of time",
   "main": "auto_mouse_move.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node auto_mouse_move.js"
   },
   "author": "R.J. Freund",
   "license": "ISC",
