@@ -5,7 +5,8 @@
   "main": "auto_mouse_move.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node auto_mouse_move.js"
+    "start": "node fast_move.js",
+    "slow": "node slow_move.js"
   },
   "author": "R.J. Freund",
   "license": "ISC",

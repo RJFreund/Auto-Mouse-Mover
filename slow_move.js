@@ -2,8 +2,8 @@ var robot = require("robotjs");
 
 var origMousePosition = robot.getMousePos();
 var newMousePosition = { x: null, y: null};
-var hasMovedLeft = false;
-var recheckTime = 10000;
+var hasMovedUp = false;
+var recheckTime = 120000;
 
 /*
 setInterval(function(){
@@ -17,14 +17,14 @@ var interval = setInterval(function(){
     var currentMousePosition = robot.getMousePos();
     if (origMousePosition.x === currentMousePosition.x &&
         origMousePosition.y === currentMousePosition.y){
-        if (hasMovedLeft){
-            newMousePosition.x = currentMousePosition.x+1;
-            newMousePosition.y = currentMousePosition.y;
-            hasMovedLeft = false;
+        if (hasMovedUp){
+            newMousePosition.x = currentMousePosition.x;
+            newMousePosition.y = currentMousePosition.y+1;
+            hasMovedUp = false;
         } else {
-            newMousePosition.x = currentMousePosition.x-1;
-            newMousePosition.y = currentMousePosition.y;
-            hasMovedLeft = true;
+            newMousePosition.x = currentMousePosition.x;
+            newMousePosition.y = currentMousePosition.y-1;
+            hasMovedUp = true;
         }
         robot.moveMouse(newMousePosition.x, newMousePosition.y);
         console.log("mouse moved to x:" + newMousePosition.x + ", y:" + newMousePosition.y + " after " + recheckTime + " ms");
