@@ -18,9 +18,8 @@ var interval = setInterval(function(){
         origMousePosition.y === currentMousePosition.y){
             newMousePosition.x = currentMousePosition.x;
             newMousePosition.y = currentMousePosition.y-1;
-        }
-        robot.moveMouse(newMousePosition.x, newMousePosition.y);
-        console.log("mouse moved to x:" + newMousePosition.x + ", y:" + newMousePosition.y + " after " + recheckTime + " ms");
+            robot.moveMouse(newMousePosition.x, newMousePosition.y);
+            console.log("mouse moved to x:" + newMousePosition.x + ", y:" + newMousePosition.y + " after " + recheckTime + " ms");
     }
     origMousePosition = robot.getMousePos();
 }, recheckTime);
